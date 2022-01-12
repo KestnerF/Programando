@@ -6,7 +6,7 @@ public class aula{
 	public static void main(String[] args) {
 	
 	
-	int nota1 = 90;
+	int nota1 = 10;
 	int nota2 = 60;
 	int nota3 = 70;
 	int nota4 = 80;
@@ -17,7 +17,10 @@ public class aula{
 		if (media >=70) {
 			System.out.println("Aluno aprovado: " + media );
 			
-		} else {
+		} if ( media >= 40 && media <= 69) {
+			System.out.println("Aluno em recupeção:" + media );
+		}
+		else {
 			System.out.println("Aluno reprovado:" + media);
 		}
 	}
