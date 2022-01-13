@@ -12,28 +12,16 @@ public class aula {
 		int media = 0;
 
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
-		
-		/*condições logica com IF e ELSE*/
-		/*
-		if (media >= 70) {
-			System.out.println("Aluno aprovado: " + media);
 
-		} else if (media >= 40 && media <= 69) {
-			System.out.println("Aluno em recupeção:" + media);
+		/* Operações logicas aninhadas: São operacoes dentro de operaçoes */
+
+		if (media >= 50) {
+			if (media >= 70) {
+				System.out.println("Aluno esta aprovado direto");
+			}
 		} else {
-			System.out.println("Aluno reprovado:" + media);
-		} */
-		
-	/*Operadores ternários são para micro validações*/	
-		String saidaResultado;
-		
-		saidaResultado = media >= 70 ? "Aluno Aprovado" : (media >= 40 && media <= 69) ? "Aluno em Recuperacao" :"Aluno Reprovado";
-		
-		System.out.println(saidaResultado);
-		
-		
-		
-		
-	
+			System.out.println("Aluno esta em recuperaçao");
+		}
+
 	}
 }
