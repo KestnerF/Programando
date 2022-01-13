@@ -27,7 +27,7 @@ public class aula {
 	/*Operadores ternários são para micro validações*/	
 		String saidaResultado;
 		
-		saidaResultado = media >= 70 ? "Aluno Aprovado" : "Aluno Reprovado";
+		saidaResultado = media >= 70 ? "Aluno Aprovado" : (media >= 40 && media <= 69) ? "Aluno em Recuperacao" :"Aluno Reprovado";
 		
 		System.out.println(saidaResultado);
 		
