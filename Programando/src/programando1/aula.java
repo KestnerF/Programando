@@ -14,13 +14,14 @@ public class aula {
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
 
 		/* SWITCH CASE: OPERAÇÕES EXATAS */
-		switch (media) {
-		case 70:
-			System.out.println("Aluno aprovado");
+		int dia = 10;
+		switch (dia) {
+		case 1:
+			System.out.println("terca-feira");
 			break;
 		
 			
-		default: System.out.println("Outro valor" + media);
+		default: System.out.println("Outro dia qualquer");
 			break;
 		}
 	
