@@ -17,11 +17,13 @@ public class aula {
 
 		if (media >= 50) {
 			if (media >= 70) {
-				System.out.println("Aluno esta aprovado direto");
+				System.out.println("Aluno esta aprovado direto - Parabens" + media);
+			}else {
+			System.out.println("Aluno esta em recuperaçao"+ media );
 			}
-		} else {
-			System.out.println("Aluno esta em recuperaçao");
+		}else {
+			System.out.println("Aluno Reprovado direto" + media );
+		}
 		}
 
 	}
-}
