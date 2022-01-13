@@ -5,25 +5,25 @@ public class aula {
 	/* main e um metodo auto executavel em Java */
 	public static void main(String[] args) {
 
-		int nota1 = 90;
-		int nota2 = 60;
-		int nota3 = 90;
-		int nota4 = 80;
+		int nota1 = 70;
+		int nota2 = 70;
+		int nota3 = 70;
+		int nota4 = 70;
 		int media = 0;
 
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-		/* Operações logicas aninhadas: São operacoes dentro de operaçoes */
-
-		if (media >= 50) {
-			if (media >= 70) {
-				System.out.println("Aluno esta aprovado direto - Parabens" + media);
-			}else {
-			System.out.println("Aluno esta em recuperaçao"+ media );
-			}
-		}else {
-			System.out.println("Aluno Reprovado direto" + media );
+		/* SWITCH CASE: OPERAÇÕES EXATAS */
+		switch (media) {
+		case 70:
+			System.out.println("Aluno aprovado");
+			break;
+		
+			
+		default: System.out.println("Outro valor" + media);
+			break;
 		}
+	
 		}
 
 	}
