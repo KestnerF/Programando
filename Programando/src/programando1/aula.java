@@ -5,20 +5,12 @@ public class aula {
 	/* main e um metodo auto executavel em Java */
 	public static void main(String[] args) {
 
-		/* Estrutura de repeticao while */
+		/* Estrutura de repeticao FOR */
 
-		int numero = 0;
-
-		while (numero <= 60) {/* Verifica e depois executa */
-			System.out.println(" o numero atual e : " + numero);
-			numero++;
+		for (int numero = 10; numero >= 0; numero --) {
+			System.out.println("Numero atual e :" + numero);
 		}
 
-		/*--------------------------------------------------*/
-		int numero2 = 0;
-		do { /* primeiro executa e depois verefica */
-
-		} while (numero2 <= 60);
 	}
 
 }
