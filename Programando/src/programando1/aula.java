@@ -1,22 +1,26 @@
 package programando1;
 
+import javax.swing.JOptionPane;
+
 public class aula {
 
 	/* main e um metodo auto executavel em Java */
 	public static void main(String[] args) {
 
-		/* Modulo : Resto da Divisao % */
+		/* ENTRADA DE DADOS*/
 		
-		double carro = 9;
-		double pessoa = 2;
-				
-		double resto = carro % pessoa;
+		String carros = JOptionPane.showInputDialog("informe a quantidade de carros?"); 
+		String pessoas = JOptionPane.showInputDialog("informe a quantidade de pessoas?");
 		
-		System.out.println("Sobraram exatamente :" + resto + " carros.");
+		double carroNumero = Double.parseDouble(carros);
+		double pessoaNumero = Double.parseDouble(pessoas);
+		
+		int divisao = (int) (carroNumero / pessoaNumero);
+		
+		double resto = carroNumero % pessoaNumero;
 		
 		
-		
-
+		JOptionPane.showMessageDialog(null, "Divisao para pessoas deu " + divisao + " carros e sobrou " + resto +" carros");
 	}
 
 }
