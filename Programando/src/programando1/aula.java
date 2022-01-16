@@ -7,34 +7,32 @@ public class aula {
 	/* main e um metodo auto executavel em Java */
 	public static void main(String[] args) {
 
-		/* ENTRADA DE DADOS*/
+		String nota1 = JOptionPane.showInputDialog("Informe a nota 1");
+		String nota2 = JOptionPane.showInputDialog("Informe a nota 2");
+		String nota3 = JOptionPane.showInputDialog("Informe a nota 3");
+		String nota4 = JOptionPane.showInputDialog("Informe a nota 4");
 		
-		String carros = JOptionPane.showInputDialog("informe a quantidade de carros?"); 
-		String pessoas = JOptionPane.showInputDialog("informe a quantidade de pessoas?");
+		double dNota1 = Double.parseDouble(nota1);
+		double dNota2 = Double.parseDouble(nota2);
+		double dNota3 = Double.parseDouble(nota3);
+		double dNota4 = Double.parseDouble(nota4);
 		
-		double carroNumero = Double.parseDouble(carros);
-		double pessoaNumero = Double.parseDouble(pessoas);
 		
-		int divisao = (int) (carroNumero / pessoaNumero);
+		double media = (dNota1 + dNota2 + dNota3 + dNota4 ) /4;
 		
-		double resto = carroNumero % pessoaNumero;
+		/*Media para aprovacao e 70*/
 		
-		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisao?");
-		
-		if(resposta == 0) {
-			JOptionPane.showMessageDialog(null, "Divisao para pessoas deu " + divisao );
-		}else { 
-			System.out.println("nao quiz ver o resultado");
+		if (media >= 50) {
+			if (media >= 70) {
+				JOptionPane.showMessageDialog(null, "Aluno esta aprovado com media de  :" + media);
+			}else {
+				JOptionPane.showMessageDialog(null, "aluno em recuperacao com media de  :" + media);
+			}
+		}else {
+			JOptionPane.showMessageDialog(null, "aluno esta reprovado com media de :" + media);
 		}
 		
-	
-		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resto da divisao?");
 		
-		if (resposta == 0) {
-			JOptionPane.showMessageDialog(null, "o resto da divisao e  " + resto );
-		}else { 
-			System.out.println("nao quiz ver o resultado");
-		}
 		
 	}
 
