@@ -19,8 +19,23 @@ public class aula {
 		
 		double resto = carroNumero % pessoaNumero;
 		
+		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisao?");
 		
-		JOptionPane.showMessageDialog(null, "Divisao para pessoas deu " + divisao + " carros e sobrou " + resto +" carros");
+		if(resposta == 0) {
+			JOptionPane.showMessageDialog(null, "Divisao para pessoas deu " + divisao );
+		}else { 
+			System.out.println("nao quiz ver o resultado");
+		}
+		
+	
+		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resto da divisao?");
+		
+		if (resposta == 0) {
+			JOptionPane.showMessageDialog(null, "o resto da divisao e  " + resto );
+		}else { 
+			System.out.println("nao quiz ver o resultado");
+		}
+		
 	}
 
 }
