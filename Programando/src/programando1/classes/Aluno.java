@@ -10,6 +10,8 @@ public class Aluno {
 	String nomeMae;
 	String nomePai;
 	String dataMatricula;
+	String nomeEscola;
+	String serieMatriculadoString;
 	
 	
 	
