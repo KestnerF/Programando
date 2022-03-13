@@ -1,37 +1,24 @@
 package programando1;
 
-import javax.swing.JOptionPane;
+import programando1.classes.Aluno;
 
 public class aula {
 
 	/* main e um metodo auto executavel em Java */
 	public static void main(String[] args) {
 
-		String nota1 = JOptionPane.showInputDialog("Informe a nota 1");
-		String nota2 = JOptionPane.showInputDialog("Informe a nota 2");
-		String nota3 = JOptionPane.showInputDialog("Informe a nota 3");
-		String nota4 = JOptionPane.showInputDialog("Informe a nota 4");
+		/*Objeto ainda nao existe na memoria*/
+		/*Aluno aluno1;*/
+	/*-------------------------------------------------*/
+		/*Agora temos um objeto real na memoria*/
+		Aluno aluno1 = new Aluno(); /*aqui sera joao*/
+		aluno1.setNome("joao");
 		
-		double dNota1 = Double.parseDouble(nota1);
-		double dNota2 = Double.parseDouble(nota2);
-		double dNota3 = Double.parseDouble(nota3);
-		double dNota4 = Double.parseDouble(nota4);
+		System.out.println("Nome e = " + aluno1.getNome());
 		
+		Aluno aluno2 = new Aluno(); /*aqui sera Pedro*/
 		
-		double media = (dNota1 + dNota2 + dNota3 + dNota4 ) /4;
-		
-		/*Media para aprovacao e 70*/
-		
-		if (media >= 50) {
-			if (media >= 70) {
-				JOptionPane.showMessageDialog(null, "Aluno esta aprovado com media de  :" + media);
-			}else {
-				JOptionPane.showMessageDialog(null, "aluno em recuperacao com media de  :" + media);
-			}
-		}else {
-			JOptionPane.showMessageDialog(null, "aluno esta reprovado com media de :" + media);
-		}
-		
+		Aluno aluno3 = new Aluno(); /*aqui sera o alex*/
 		
 		
 	}
