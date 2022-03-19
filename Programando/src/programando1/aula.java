@@ -11,14 +11,14 @@ public class aula {
 		/*Aluno aluno1;*/
 	/*-------------------------------------------------*/
 		/*Agora temos um objeto real na memoria*/
-		Aluno aluno1 = new Aluno(); /*aqui sera joao*/
+		Aluno aluno1 = new Aluno(null); /*aqui sera joao*/
 		aluno1.setNome("joao");
 		
 		System.out.println("Nome e = " + aluno1.getNome());
 		
-		Aluno aluno2 = new Aluno(); /*aqui sera Pedro*/
+		Aluno aluno2 = new Aluno(null); /*aqui sera Pedro*/
 		
-		Aluno aluno3 = new Aluno(); /*aqui sera o alex*/
+		Aluno aluno3 = new Aluno(null); /*aqui sera o alex*/
 		
 		
 	}
